@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+
+/*  
+  Cards for the image gallery 
+*/
+.cards {
+    display: flex 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+ }
+ .card {
+     flex: 0 1 24%;
+     background: white;
+ }
+ .card-content {
+	padding: 1.4em;
+}
+
+
+
+.container{
+    position: relative;
+    top: 0;
+    transition: top 2s cubic-bezier(0,.97,.12,1);
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.content-1{
+    background: url("img/shoes-25pct.jpeg") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-2{
+    background: rgb(241, 225, 225);
+}
+.content-3{
+    background: url("img/place_holder_bk.png") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-4{
+    background: purple;
+}
+.page-title{
+    font-family: american typewriter, serif;
+    font-size: 44px;
+    font-weight: bold;
+    color: skyblue;
+    position: absolute;
+    top: 20px;
+}
+.section-title{
+    font-family: american typewriter, serif;
+    font-size: 44px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 40px;
+}
+.home-text{
+    font-family: comic sans ms, cursive;
+    position: absolute;
+    bottom: 20px;
+    width: 75%
+}
+.body-text{
+    font-family: comic sans ms, cursive;
+    width: 75%
+}
+.widget{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 20px;
+}
+.widget a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 grey;
+    cursor: pointer;
+}
